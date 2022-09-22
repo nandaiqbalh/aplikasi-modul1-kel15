@@ -72,6 +72,7 @@ public class LoginActivity extends AppCompatActivity {
             if(loginData()){
                 Log.e("actLogin","true");
                 Intent main = new Intent(this, MainActivity.class);
+                main.putExtra("name", username);
                 startActivity(main);
                 finish();
             } else {

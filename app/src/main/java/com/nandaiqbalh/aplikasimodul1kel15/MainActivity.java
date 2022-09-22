@@ -41,9 +41,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initPreference() {
         SharedPreferences preferences = getSharedPreferences("LoginPreference", MODE_PRIVATE);
-        String username = preferences.getString("username", "");
+//        String username = preferences.getString("username", "");
 
-        tvNameMain.setText(username);
+        String username = getIntent().getStringExtra("name");
+        tvNameMain.setText("Halo, " +  username + "!");
     }
 
     private void deletePreference(){
