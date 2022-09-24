@@ -75,6 +75,7 @@
                     android:background="@drawable/roundedbutton"
                     android:text="back"
                     android:textColor="@color/white" />
+
                 <LinearLayout
                     android:layout_width="2dp"
                     android:layout_height="2dp"
