@@ -1,6 +1,7 @@
 package com.nandaiqbalh.aplikasimodul1kel15.helper.listadapter;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,7 @@ public class AnggotaAdapter extends ArrayAdapter {
     private String[] nimAnggota;
     private Context context;
 
-    AnggotaAdapter(@NonNull Context context, String[] namaAnggota, String[] nimAnggota) {
+    public AnggotaAdapter(@NonNull Context context, String[] namaAnggota, String[] nimAnggota) {
         super(context, R.layout.row_item_anggota, namaAnggota);
         this.namaAnggota = namaAnggota;
         this.nimAnggota = nimAnggota;
