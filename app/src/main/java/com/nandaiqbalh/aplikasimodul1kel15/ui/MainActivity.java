@@ -1,8 +1,7 @@
-package com.nandaiqbalh.aplikasimodul1kel15;
+package com.nandaiqbalh.aplikasimodul1kel15.ui;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ListView;
@@ -11,7 +10,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.nandaiqbalh.aplikasimodul1kel15.R;
 import com.nandaiqbalh.aplikasimodul1kel15.helper.listadapter.AnggotaAdapter;
+import com.nandaiqbalh.aplikasimodul1kel15.ui.login.LoginActivity;
 
 
 public class MainActivity extends AppCompatActivity {

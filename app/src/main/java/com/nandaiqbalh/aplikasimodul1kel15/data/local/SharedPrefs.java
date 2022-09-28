@@ -1,4 +1,4 @@
-package com.nandaiqbalh.aplikasimodul1kel15;
+package com.nandaiqbalh.aplikasimodul1kel15.data.local;
 
 import android.app.Activity;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.nandaiqbalh.aplikasimodul1kel15;
+package com.nandaiqbalh.aplikasimodul1kel15.ui.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.nandaiqbalh.aplikasimodul1kel15.ui.MainActivity;
+import com.nandaiqbalh.aplikasimodul1kel15.R;
+import com.nandaiqbalh.aplikasimodul1kel15.ui.register.RegisterActivity;
 
 
 public class LoginActivity extends AppCompatActivity {

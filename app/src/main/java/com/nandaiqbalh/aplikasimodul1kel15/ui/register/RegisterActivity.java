@@ -1,4 +1,4 @@
-package com.nandaiqbalh.aplikasimodul1kel15;
+package com.nandaiqbalh.aplikasimodul1kel15.ui.register;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.nandaiqbalh.aplikasimodul1kel15.R;
+import com.nandaiqbalh.aplikasimodul1kel15.ui.login.LoginActivity;
 
 public class RegisterActivity extends AppCompatActivity {
 

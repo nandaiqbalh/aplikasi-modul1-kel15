@@ -1,4 +1,4 @@
-package com.nandaiqbalh.aplikasimodul1kel15;
+package com.nandaiqbalh.aplikasimodul1kel15.ui;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,6 +8,9 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.nandaiqbalh.aplikasimodul1kel15.R;
+import com.nandaiqbalh.aplikasimodul1kel15.ui.login.LoginActivity;
 
 public class SplashscreenActivity extends AppCompatActivity {
     private static int splashInterval = 2000;
