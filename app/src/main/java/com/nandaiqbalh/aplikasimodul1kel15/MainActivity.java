@@ -21,56 +21,56 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//
-//        initView();
-//        initPreference();
-////        logout();
+
+        initView();
+        initPreference();
+//        logout();
     }
-//
-//    @Override
-//    public void onBackPressed() {
-//        showAlertDialog();
-//    }
 
-//    private void initView() {
-//        tvNameMain = findViewById(R.id.tvNameMain);
-//        btnLogoutMain = findViewById(R.id.btnLogoutMain);
-//        exit = findViewById(R.id.btnLogoutMain);
-//    }
-//
-//
-//    private void initPreference() {
-//        SharedPreferences preferences = getSharedPreferences("LoginPreference", MODE_PRIVATE);
-////        String username = preferences.getString("username", "");
-//
-//        String username = getIntent().getStringExtra("name");
-//        tvNameMain.setText("Halo, " +  username + "!");
-//    }
-//
-//    private void deletePreference(){
-//        SharedPreferences preferences = getSharedPreferences("LoginPreference", MODE_PRIVATE);
-//        preferences.edit().remove("username").commit();
-//        preferences.edit().remove("password").commit();
-//    }
+    @Override
+    public void onBackPressed() {
+        showAlertDialog();
+    }
 
-//    private void logout() {
-//        exit.setOnClickListener(view -> showAlertDialog());
-//    }
-//
-//    public void showAlertDialog() {
-//        new AlertDialog.Builder(this)
-//                .setMessage("Apa kalian ingin Logout?")
-//                .setCancelable(false)
-//                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        deletePreference();
-//                        Intent login = new Intent(MainActivity.this, LoginActivity.class);
-//                        startActivity(login);
-//                        finish();
-//                    }
-//                })
-//                .setNegativeButton("No", null)
-//                .show();
-//    }
+    private void initView() {
+        tvNameMain = findViewById(R.id.tvNameMain);
+        btnLogoutMain = findViewById(R.id.btnLogoutMain);
+        exit = findViewById(R.id.btnLogoutMain);
+    }
+
+
+    private void initPreference() {
+        SharedPreferences preferences = getSharedPreferences("LoginPreference", MODE_PRIVATE);
+//        String username = preferences.getString("username", "");
+
+        String username = getIntent().getStringExtra("name");
+        tvNameMain.setText("Halo, " +  username + "!");
+    }
+
+    private void deletePreference(){
+        SharedPreferences preferences = getSharedPreferences("LoginPreference", MODE_PRIVATE);
+        preferences.edit().remove("username").commit();
+        preferences.edit().remove("password").commit();
+    }
+
+    private void logout() {
+        exit.setOnClickListener(view -> showAlertDialog());
+    }
+
+    public void showAlertDialog() {
+        new AlertDialog.Builder(this)
+                .setMessage("Apa kalian ingin Logout?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        deletePreference();
+                        Intent login = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(login);
+                        finish();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
+    }
 
 }
